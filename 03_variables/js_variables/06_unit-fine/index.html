@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Unit fine</title>
+
+		<script src="05.06UnitFineEx.js"></script>
+	</head>
+	<body data-new-gr-c-s-check-loaded="14.1047.0" data-gr-ext-installed="">
+		<h3>Unit fine</h3>
+
+		<form>
+			<label>Monthly net income: </label>
+			<input type="text" name="txtNetIncome" id="txtNetIncome" size="5" />
+			<input
+				type="button"
+				id="submit"
+				value="Calculate unit fine"
+				onclick="calculateUnitFine()"
+			/>
+		</form>
+
+		<!-- This is the target where the JavaScript will write the answer -->
+		<div id="answerDiv"></div>
+
+		<!-- test example: 
+netIncome= 23100 -> unitFine=47.42 euros 
+-->
+	</body>
+</html>
