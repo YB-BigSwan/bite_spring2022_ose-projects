@@ -1,19 +1,25 @@
 function comparePackages() {
-	
-		// assign input field values into a variables
-		
-		// calculate the costs of the Special Package
-		
+	var txt = Number(document.getElementById('textMessages').value);
+	var call = Number(document.getElementById('callTime').value);
 
-		// If the Special package is cheaper than the All-inclusive package 
-		
-			// assign text "The Special package (XX.XX) is cheaper than the All-inclusive package (29.90)"
-			// to a variable
-					
-		// otherwise
-			// assign text "The All-inclusive package (29.90) is cheaper than the Special package (XX.XX)"
-			// to a variable
-		
-		// write the answer to the web page DOM, in the answer div, as the content
-		
+	var aipkg = 29.9;
+	var spkg = 19.9 + txt * 0.069 + call * 0.069;
+
+	var spkgless =
+		'The Special package ' +
+		'(' +
+		spkg.toFixed(2) +
+		')' +
+		' is cheaper than the All-inclusive package (29.90)';
+	var aipkgless =
+		'The All-inclusive package (29.90) is cheaper than the Special package' +
+		'(' +
+		spkg.toFixed(2) +
+		')';
+
+	if (spkg < aipkg) {
+		document.getElementById('answer').innerHTML = spkgless;
+	} else {
+		document.getElementById('answer').innerHTML = aipkgless;
+	}
 }
