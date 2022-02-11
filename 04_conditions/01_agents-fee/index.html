@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Apartment Selling</title>
+
+		<script src="06.01AgentsFeeEx.js"></script>
+	</head>
+
+	<body data-new-gr-c-s-check-loaded="14.1049.0" data-gr-ext-installed="">
+		<h3>Apartment Selling</h3>
+
+		<form>
+			<label>Price: </label>
+			<input type="text" name="price" id="price" size="8" />
+			<input
+				type="button"
+				id="submit"
+				value="Calculate Fee"
+				onclick="calculateFee()"
+			/>
+		</form>
+
+		<!-- This is the target where the JavaScript will write the answer -->
+		<div id="fee"></div>
+	</body>
+</html>
