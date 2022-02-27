@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Weight</title>
+
+		<script src="08.05WeightEx.js"></script>
+	</head>
+	<body data-new-gr-c-s-check-loaded="14.1050.0" data-gr-ext-installed="">
+		<h3>Weight</h3>
+
+		<form>
+			<p>
+				<label>Original weight: </label>
+				<input type="text" name="weight" id="weight" size="3" />
+				<input
+					type="button"
+					id="submit"
+					value="Show weight goals"
+					onclick="showWeightGoals()"
+				/>
+			</p>
+		</form>
+
+		<!-- This is the target where the JavaScript will write the answer -->
+		<div id="answer"></div>
+
+		<!-- test example:
+weight = 80,  -> After 1.week 78.9 kg   After 2.week 77.7 kg After 3.week 76.6 kg... After 7. week 72.0 kg
+weight = 90 ->						
+-->
+	</body>
+</html>
