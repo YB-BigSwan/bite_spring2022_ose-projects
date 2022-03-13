@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="script.js"></script>
+		<title>Club Members</title>
+	</head>
+	<body>
+		<h1>Club Members</h1>
+
+		<form action="">
+			<!-- name -->
+			<label for="name">Name:</label>
+			<input type="text" id="txtName" />
+			<!-- age -->
+			<label for="age">Age:</label>
+			<input type="text" id="txtAge" />
+			<!-- save -->
+			<input type="button" value="Save" onclick="addPerson()" />
+			<!-- member count -->
+			<br />
+			<br />
+			<div id="memberCount"></div>
+			<br />
+
+			<!-- input buttons -->
+			<input type="button" value="Show Minors" onclick="showMinors()" />
+			<input type="button" value="Show Adults" onclick="showAdults()" />
+			<input type="button" value="Show Oldest Member(s)" onclick="showOld()" />
+			<input
+				type="button"
+				value="Show Youngest Member(s)"
+				onclick="showYoung()"
+			/>
+		</form>
+
+		<div id="output"></div>
+	</body>
+</html>
