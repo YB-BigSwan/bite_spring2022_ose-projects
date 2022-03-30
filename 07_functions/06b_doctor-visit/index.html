@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Doctor Visit and Kela</title>
+		<style type="text/css">
+			label {
+				display: block;
+				width: 10em;
+				float: left;
+			}
+		</style>
+
+		<script src="07.06DoctorVisit.js"></script>
+	</head>
+	<body data-new-gr-c-s-check-loaded="14.1054.0" data-gr-ext-installed="">
+		<h3>Doctor Visit and Kela</h3>
+
+		<form>
+			<p>
+				<label>Length of the visit: </label>
+				<input type="text" name="length" id="length" size="3" /> min
+			</p>
+			<p>
+				<label>Doctor’s Fee </label>
+				<input type="text" name="doctorsFee" id="doctorsFee" size="8" /> euros
+			</p>
+			<p>
+				<input
+					type="button"
+					id="submit"
+					value="Calculate"
+					onclick="calculate()"
+				/>
+			</p>
+		</form>
+
+		<!-- This is the target where the JavaScript will write the answer -->
+		<div id="answer"></div>
+
+		<!-- test example:
+length = 21, doctorsFee = 69 -> Length of visit is 21 minutes. 
+						Kela reimbursement is 13.50 euros.
+length = 15, doctorsFee = 69 -> Length of visit is 15 minutes. 
+						Kela reimbursement is 11.00 euros.
+-->
+		<div
+			id="viewPortSize"
+			class="bottom_right"
+			style="
+				background-color: rgb(0, 0, 0);
+				color: rgb(255, 255, 255);
+				font-size: 12px;
+				display: none;
+			"
+		>
+			Inner: 577 x 918<br />Outer: 976 x 1055
+		</div>
+	</body>
+</html>

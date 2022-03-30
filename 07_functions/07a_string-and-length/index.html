@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>String and Length</title>
+
+		<script src="07.07aStringAndLengthEx.js"></script>
+	</head>
+	<body data-new-gr-c-s-check-loaded="14.1054.0" data-gr-ext-installed="">
+		<h3>String and Length</h3>
+
+		<form>
+			<label>Name: </label>
+			<input type="text" name="name" id="name" /> &nbsp;&nbsp;&nbsp;
+			<input type="button" id="submit" value="Show" onclick="processName()" />
+		</form>
+		<br />
+		<div id="upperCase"></div>
+		<div id="lowerCase"></div>
+		<div id="length"></div>
+
+		<!-- test example:
+name = Matti Majava -> 	With upper case letters: MATTI MAJAVA
+						With lower case letters: matti majava
+						Character count: 12
+
+name = Mary Smith -> 	With upper case letters: MARY SMITH
+						With lower case letters: mary smith
+						Character count: 10
+-->
+		<div
+			id="viewPortSize"
+			class="bottom_right"
+			style="
+				background-color: rgb(0, 0, 0);
+				color: rgb(255, 255, 255);
+				font-size: 12px;
+				display: none;
+			"
+		>
+			Inner: 577 x 918<br />Outer: 976 x 1055
+		</div>
+	</body>
+</html>

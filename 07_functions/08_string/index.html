@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>String</title>
+
+		<script src="07.07bString.js"></script>
+	</head>
+	<body data-new-gr-c-s-check-loaded="14.1054.0" data-gr-ext-installed="">
+		<h3>String</h3>
+
+		<form>
+			<label>Name: </label>
+			<input type="text" name="name" id="name" /> &nbsp;&nbsp;&nbsp;
+			<input type="button" id="submit" value="Show" onclick="processName()" />
+		</form>
+
+		<div id="upperCase"></div>
+		<div id="lowerCase"></div>
+		<div id="length"></div>
+		<div id="contains"></div>
+		<div id="firstCharacter"></div>
+		<div id="manyCharacters"></div>
+
+		<!-- test example:
+name = Matti Majava -> 	With upper case letters: MATTI MAJAVA
+						With lower case letters: matti majava
+						Character count: 12
+						Doesn’t contain the text muumi.
+						First character: M
+						First three characters: Mat
+-->
+		<div
+			id="viewPortSize"
+			style="
+				background-color: rgb(0, 0, 0);
+				color: rgb(255, 255, 255);
+				font-size: 12px;
+				display: none;
+			"
+			class="bottom_right"
+		>
+			Inner: 575 x 918<br />Outer: 974 x 1055
+		</div>
+	</body>
+	<grammarly-desktop-integration
+		data-grammarly-shadow-root="true"
+	></grammarly-desktop-integration>
+</html>
