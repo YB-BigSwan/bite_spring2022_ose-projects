@@ -1,0 +1,19 @@
+{
+	"movies": [
+		{
+			"movieName": "Lord of the Rings: The Fellowship of the Ring",
+			"publishYear": 2001,
+			"description": "A young hobbit, Frodo, who has found the One Ring that belongs to the Dark Lord Sauron, begins his journey with eight companions to Mount Doom, the only place where it can be destroyed."
+		},
+		{
+			"movieName": "Lord of the Rings: The Two Towers",
+			"publishYear": 2002,
+			"description": "Frodo and Sam arrive in Mordor with the help of Gollum. A number of new allies join their former companions to defend Isengard as Saruman launches an assault from his domain."
+		},
+		{
+			"movieName": "Lord of the Rings: The Return of the King",
+			"publishYear": 2003,
+			"description": "The former Fellowship members prepare for the final battle. While Frodo and Sam approach Mount Doom to destroy the One Ring, they follow Gollum, unaware of the path he is leading them to."
+		}
+	]
+}
