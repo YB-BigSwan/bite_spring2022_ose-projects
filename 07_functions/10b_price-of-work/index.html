@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Repair Work</title>
+		<style type="text/css">
+			label {
+				display: block;
+				width: 5em;
+				float: left;
+			}
+		</style>
+
+		<script src="07.10bPriceOfWorkAndSundaysEx.js"></script>
+	</head>
+	<body data-new-gr-c-s-check-loaded="14.1054.0" data-gr-ext-installed="">
+		<h3>Repair Work</h3>
+
+		<form>
+			<p>
+				<label>Work Title: </label>
+				<input
+					type="text"
+					name="title"
+					id="title"
+					size="25"
+					onblur="allCapsTitleTrimmed()"
+				/>
+				<!-- onfocus: Chrome/supported, Firefox/not supported -->
+			</p>
+			<p>
+				<label>Date: </label>
+				<input type="text" name="date" id="date" size="8" /> (dd.MM.yyyy)
+			</p>
+			<p>
+				<label>Start Time: </label>
+				<input type="text" name="startTime" id="startTime" size="5" />
+			</p>
+			<p>
+				<label>End Time: </label>
+				<input type="text" name="endTime" id="endTime" size="5" />
+			</p>
+			<p>
+				<label>Description: </label>
+				<textarea
+					name="description"
+					id="description"
+					rows="4"
+					cols="40"
+				></textarea>
+			</p>
+			<p>
+				<input
+					type="button"
+					id="submit"
+					value="Calculate"
+					onclick="calculate()"
+				/>
+			</p>
+		</form>
+
+		<!-- This is the target where the JavaScript will write the answer -->
+		<div id="answer"></div>
+
+		<!-- test example:
+date = 29.03.2020  -> Date 29.03.2020 (Sunday).
+The price of this repair work is 72 euros per hour.
+
+date = 30.03.2020  -> Date 30.03.2020 (work day).
+The price of this repair work is 48 euros per hour.
+-->
+		<div
+			id="viewPortSize"
+			class="bottom_right"
+			style="
+				background-color: rgb(0, 0, 0);
+				color: rgb(255, 255, 255);
+				font-size: 12px;
+				display: none;
+			"
+		>
+			Inner: 575 x 918<br />Outer: 974 x 1055
+		</div>
+	</body>
+</html>
